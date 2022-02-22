@@ -1,224 +1,55 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.4;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin: 0.75rem 0;
-}
-
-ul{
-  list-style: none;
-}
-
-/* Utility Classes */
-.clear{
-  clear:both;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 2rem;
-  overflow: hidden;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-primary {
-  color: orange;
-}
-
-.bg-light {
-  background: #f4f4f4;
-  color: #333;
-}
-
-.bg-dark {
-  background: #707780;
+.btn-primary {
   color: #fff;
+  background-color:#006699;
+  border-color: #005078;
 }
-
-.bg-primary {
-  background: #ffffff;
-  color: #000;
-}
-
-.l-heading {
-  font-size: 4rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.1;
-}
-
-.m-heading {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.1;
-}
-
-.lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-
-.py-1 { padding: 1.5rem 0; }
-.py-2 { padding: 2rem 0; }
-.py-3 { padding: 3rem 0; }
-
-.p-1 { padding: 1.5rem; }
-.p-2 { padding: 2rem; }
-.p-3 { padding: 3rem; }
-
-.btn {
-  display: inline-block;
-  color: #fff;
-  background: #93cb52;
-  padding: 0.5rem 2rem;
-  border: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background: #7ab436;
-}
-
-.btn-dark {
-  background: #333;
-  color: #fff;
-}
-
-.list {
-  margin: 0.5rem 0;
-  list-style: none;
-}
-
-.list li {
-  padding: 0.5rem 0;
-  border-bottom: #444 dotted 1px;
-}
-
-
-/* Navbar */
-#navbar {
-  background: #707780;
-  color: #c1c7ce;
-  padding: 10px;
-  min-width: 960px;
-}
-
-
-#navbar ul {
-  list-style: none;
-  overflow: hidden;
-}
-
-#navbar ul li {
-  display: block;
-  float: left;
-  text-align: right;
-}
-
-#navbar ul li a {
-  color: #c1c7ce;
-  padding: 0px 15px 0px 15px;
-  margin: 0px;
-}
-
-#navbar ul li a:hover {
-  color:white;
-}
-
-/* contact section */
-.wrapper {  
-  width:960px;
-  margin:auto;
-}
-
-.logo {
-  padding:15px 0px;
-  float: left;
-}
-
-.menu {
-  float: right;
-
-}
-
-.menu button{
-  margin-right:15px;
-  margin-top:40px;
-  display: block;
-  float:left;
-}
-
-/* FORM */
-#container {
-  margin: 0px auto;
-  max-width: 600px;
-  padding: 15px;
-}
-
-.form-wrap {
-  background: #fff;
-  padding: 0px 25px;
-}
-
-.form-wrap h2,
-.form-wrap p {
-  text-align: center;
-}
-
-.form-wrap .form-group {
-  margin-top: 15px;
-}
-
-.form-wrap .form-group label {
-  display: block;
-  color: #000;
-  font-weight: 700;
-}
-
-.form-wrap .form-group input, .form-group textarea  {
-  width: 100%;
-  padding: 10px;
-  border: #ddd solid 1px;
-  border-radius: 0px;
-  background-color: #eeeeee;
-}
-
-.form-group select {  
-  width: 100%;
-  padding: 10px 10px 10px 5px;
-  border: #ddd solid 1px;
-  border-radius: 0px;
-  background-color: #eeeeee;
-}
-
-.button {
-  display: inline-block;
-  background-color: #006699;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  font-weight: normal;
-}
-.button:hover {
+.btn-primary:hover{
   background-color: #005078;
 }
+#main-area label{
+  font-weight: 600;
+}
+input[type=file], input[type=date], input[type=text], textarea, select, #main-area input[type=text] {
+  border: #ddd solid 1px !important;
+  border-radius: 10px !important;
+  background-color: #eeeeee !important;
+}
+#main-area input[type=file], #main-area input[type=text], #main-area input[type=date]  {
+  border: #ddd solid 1px !important;
+  border-radius: 10px !important;
+  background-color: #eeeeee !important;
+}
+#main-area .fas, #main-area .input-group-text{
+  font-family: 'FontAwesome', sans-serif; 
+  background-color: #fff !important;
+}
+a {
+  color:#000;
+  text-decoration: none;
+}
+a:hover {
+  color:#6C757D;
+}
+#current-trend, #previous-clients, #client-relationship-summary {
+  max-height: 252px !important;
+  min-height: 252px !important;
+}
+
+#main-area h1, #main-area h2, #main-area h3 {
+  color:#005078;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 800px) {
+  #main-area h1, #main-area h2, #main-area h3 {
+    font-size: 20pt;
+    text-decoration: underline;
+  }
+  #main-area .col-md-1 p, #main-area .col-md-2 p, #main-area .col-md-3 p {
+    padding-top:5px;
+  }
+  .select-multiple {
+    height:36px;
+  }
+}
+
